@@ -39,9 +39,9 @@ export default async function TalkPage({
   if (!role) notFound();
 
   return (
-    <div className="min-h-screen flex flex-col lg:flex-row">
+    <div className="min-h-screen lg:h-screen flex flex-col lg:flex-row">
       {/* Left panel — Job details */}
-      <div className="lg:w-2/5 w-full border-b lg:border-b-0 lg:border-r border-[var(--border-default)] bg-[var(--bg-surface)] p-8 lg:p-12 overflow-y-auto">
+      <div className="lg:w-2/5 w-full border-b lg:border-b-0 lg:border-r border-[var(--border-default)] bg-[var(--bg-surface)] p-8 lg:p-12 overflow-y-auto lg:max-h-screen">
         <div className="max-w-md mx-auto lg:mx-0">
           <p className="text-xs font-medium uppercase tracking-wider text-[var(--text-muted)] mb-2">
             {role.company_name}
